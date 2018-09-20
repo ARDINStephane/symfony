@@ -1,0 +1,7 @@
+controllers:
+    resource: ../src/Applications/*/Controller/*Controller.php
+    type: annotation
+    prefix:   /{_locale}
+    requirements:
+      _locale: fr|en
+    defaults: { _locale: fr}

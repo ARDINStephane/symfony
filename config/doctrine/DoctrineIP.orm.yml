@@ -1,0 +1,16 @@
+App\Applications\Doctrine\Entity\DoctrineIP:
+    type: entity
+    table: IP
+
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        IP:
+            type: string
+            length: 20
+        lastVisit:
+            type: datetime
+        nbVisit:
+            type: integer

@@ -1,0 +1,10 @@
+imports:
+    - { resource: "packages/services/app.yaml" } # must be loaded first
+    - { resource: "packages/services/" }
+
+parameters:
+    locale: 'fr'
+    base_url: 'http://localhost:8000'
+
+
+

@@ -1,0 +1,12 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+    <dl>
+        <dt>IP</dt>
+        <dd>{{ IP.IP }}</dd>
+        <dt>Nombre de visites</dt>
+        <dd>{{ IP.nbVisit }}</dd>
+        <dt>Date de la dernière visite</dt>
+        <dd>{{ IP.lastVisit |date("d/m/Y")  }}</dd>
+    </dl>
+{% endblock %}

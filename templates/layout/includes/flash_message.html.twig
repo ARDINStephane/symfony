@@ -1,0 +1,5 @@
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <p>{{ message|trans }}</p>
+    {% endfor %}
+{% endfor %}

@@ -1,0 +1,24 @@
+<header>
+    <div>
+        <a href="{{ path('hello_testTechnique') }}">{{ "header.hello" |trans }}</a>
+    </div>
+    <div>
+        <a href="{{ path('use_twig') }}">{{ "header.twig" |trans }}</a>
+    </div>
+    <div>
+        <a href="{{ path('list_ip') }}">{{ "header.list" |trans }}</a>
+    </div>
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <div>
+            <a href="{{ path('logout') }}">{{ 'header.logout' |trans}}</a>
+        </div>
+    {% else %}
+        <div>
+            <a href="{{ path('login') }}">{{ 'header.login' |trans}}</a>
+        </div>
+    {% endif %}
+
+    {% include 'layout/includes/navigation/internationalisation.html.twig' %}
+
+</header>
+

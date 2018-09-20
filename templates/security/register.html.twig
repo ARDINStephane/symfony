@@ -1,0 +1,9 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+    <div>
+        {{ form_start(form,{'action': path('register'), 'method': 'POST', 'attr':{'novalidate': null, 'data-abide': null} }) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

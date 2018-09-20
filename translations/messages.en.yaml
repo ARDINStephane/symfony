@@ -1,0 +1,7 @@
+header:
+  hello: Hello testTechnique !
+  twig: Twig is a modern template engine for PHP
+  logout: Logout
+  login: Login
+  register: Register
+  list: List of IP addresses

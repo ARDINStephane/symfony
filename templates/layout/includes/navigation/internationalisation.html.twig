@@ -1,0 +1,5 @@
+ {% if(app.request.getLocale == 'en') %}
+     <a href="{{ path('set_lang') }}">Traduire en français</a>
+ {% else %}
+     <a href="{{ path('set_lang') }}">Translate in english</a>
+ {% endif %}

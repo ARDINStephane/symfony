@@ -1,0 +1,11 @@
+{% extends 'layout/base.html.twig' %}
+
+    {% block body %}
+        {% for IP in IPs %}
+            <dl>
+                <dt>IP</dt>
+                <dd><li><a href="{{ IP.IPURL }}">{{ IP.IP }}</a></li></dd>
+            </dl>
+        {% endfor %}
+
+    {% endblock %}
